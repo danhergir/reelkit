@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "reelkit"
+version = "0.1.0"
+description = "Short explainer videos and static cards about how AI works, built on Manim."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["manim>=0.19"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+reelkit = "reelkit.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reelkit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

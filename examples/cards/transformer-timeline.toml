@@ -1,0 +1,19 @@
+# Example timeline card. Dates: Vaswani et al. (2017), Devlin et al. (2018), Brown et al. (2020).
+type = "timeline"
+kicker = "Example · timeline card"
+title = "Three papers that shaped language models."
+
+[[events]]
+year = "2017"
+text = "Attention Is All You Need introduces the Transformer"
+
+[[events]]
+year = "2018"
+text = "BERT shows one pretrained model can be adapted to many tasks"
+highlight = true
+
+[[events]]
+year = "2020"
+text = "GPT-3 shows scale alone unlocks few-shot learning"
+emphasis = "175B parameters"
+highlight = true

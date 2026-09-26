@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Renders and generated audio — reproducible from source, never committed
+build/
+out/
+media/
+*.mp4
+*.wav
+*.aiff
+
+# macOS
+.DS_Store
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mov
+*.webm
+*.m4a
+*.mp3

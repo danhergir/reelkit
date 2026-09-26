@@ -1,0 +1,39 @@
+/* Colors and fonts come from reelkit.theme via :root variables injected at build time. */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: var(--w); height: var(--h);
+  background: var(--bg); color: var(--fg);
+  font-family: "SF Mono", var(--mono), monospace;
+  padding: 56px 72px; position: relative;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+.accent { position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--accent); }
+.kicker { font-size: 18px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 22px; }
+h1 {
+  font-family: -apple-system, var(--sans), sans-serif;
+  font-size: 44px; line-height: 1.14; font-weight: 600; letter-spacing: -.018em;
+  margin-bottom: 44px;
+}
+.foot { margin-top: 36px; font-size: 19px; color: var(--muted); line-height: 1.5; }
+
+/* timeline */
+.tl { position: relative; padding-left: 38px; }
+.tl::before { content: ""; position: absolute; left: 8px; top: 10px; bottom: 14px; width: 2px; background: var(--track); }
+.ev { position: relative; padding-bottom: 32px; }
+.ev:last-child { padding-bottom: 0; }
+.dot { position: absolute; left: -36px; top: 7px; width: 15px; height: 15px; border-radius: 50%; background: var(--bg); border: 2px solid var(--muted); }
+.dot.hit { border-color: var(--accent); background: var(--accent); }
+.yr { font-size: 24px; font-weight: 600; margin-bottom: 5px; }
+.tx { font-size: 22px; color: var(--dim); line-height: 1.4; }
+.tx b { color: var(--accent); font-weight: 600; }
+
+/* reference table */
+body.reference h1 { font-size: 40px; margin-bottom: 34px; }
+table { width: 100%; border-collapse: collapse; }
+td { padding: 13px 0; border-top: 1px solid var(--track); vertical-align: top; font-size: 19px; line-height: 1.35; }
+tr:first-child td { border-top: none; }
+td.q { color: var(--dim); width: 47%; padding-right: 26px; }
+td.a b { color: var(--accent); font-weight: 600; }
+td.a .yr { color: var(--muted); font-size: inherit; font-weight: 400; }

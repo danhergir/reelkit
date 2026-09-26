@@ -1,0 +1,10 @@
+[meta]
+title = "One word at a time"
+scene = "Demo"
+format = "vertical"
+slug = "demo"
+
+[segments]
+intro = "A language model writes one word at a time."
+scores = "Given the start of a sentence, it scores every word that could come next."
+pick = "It picks one, adds it, and starts again."

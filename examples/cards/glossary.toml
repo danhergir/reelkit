@@ -1,0 +1,20 @@
+# Example reference card.
+type = "reference"
+kicker = "Example · reference card"
+title = "A few words you'll hear a lot."
+height = 675
+
+[[rows]]
+claim = "Token"
+name = "A chunk of text"
+note = "Often a word, sometimes part of one"
+
+[[rows]]
+claim = "Context window"
+name = "What the model can see"
+note = "Everything it reads before writing the next token"
+
+[[rows]]
+claim = "Temperature"
+name = "How adventurous it samples"
+note = "Low picks the likeliest word; high takes more risks"
